@@ -14,7 +14,7 @@ router.post("/", verifyToken, async (req, res) => {
     }
 });
 
-// Update method
+// Update Product
 router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
 
     try {
