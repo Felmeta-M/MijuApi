@@ -47,7 +47,7 @@ router.get("/find/:userId", verifyTokenAndAuthorization, async (req, res) => {
     }
 })
 
-// //Get all method
+// //Get all cart method
 router.get("/", verifyTokenAndAdmin, async (req, res) => {
     try {
         const carts = await Cart.find();
