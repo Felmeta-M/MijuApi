@@ -27,7 +27,7 @@ router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
     }
 })
 
-//Delete method
+//Delete Product
 router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
     try {
         await Cart.findByIdAndDelete(req.params.id)
